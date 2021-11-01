@@ -31,6 +31,20 @@ const Home: React.FC = () => {
             <S.Categorie>Live</S.Categorie>
           </S.Categories>
         </S.Header>
+        <S.MainContent>
+          <S.MainContentLeft>
+            <S.BestMoments>
+              <S.BestMomentsHeader>
+                <S.BestMomentsTitle>Melhores do momento</S.BestMomentsTitle>
+                <S.BestMomentsSeeMore>Ver todos</S.BestMomentsSeeMore>
+              </S.BestMomentsHeader>
+            </S.BestMoments>
+            <S.LastMusics>
+              <S.LastMusicsTitle>Últimas músicas tocadas</S.LastMusicsTitle>
+            </S.LastMusics>
+          </S.MainContentLeft>
+          <S.MainContentRight>aaa</S.MainContentRight>
+        </S.MainContent>
       </S.Content>
     </S.Container>
   );

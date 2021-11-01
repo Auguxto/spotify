@@ -35,6 +35,8 @@ export const Container = styled.div`
 export const Content = styled.div`
   display: flex;
   flex: 1;
+  flex-direction: column;
+
   min-height: 100vh;
 `;
 
@@ -142,6 +144,8 @@ export const Categories = styled.div`
   height: 40px;
 
   gap: 40px;
+
+  border-bottom: 1px solid rgba(90, 111, 124, 0.3);
 `;
 
 export const Categorie = styled.button<{ active?: boolean }>`
@@ -166,4 +170,97 @@ export const Categorie = styled.button<{ active?: boolean }>`
   color: ${(props) => (props.active ? "#FFFFFF" : "#5C677D")};
 
   ${(props) => (props.active ? active : null)}
+`;
+
+export const MainContent = styled.div`
+  display: flex;
+  flex: 1;
+
+  gap: 30px;
+
+  margin: 30px;
+`;
+
+export const MainContentLeft = styled.div`
+  display: flex;
+
+  flex-direction: column;
+
+  flex: 1;
+`;
+
+export const BestMoments = styled.div`
+  display: flex;
+
+  width: 100%;
+  height: 229px;
+
+  background: rgba(255, 255, 255, 0.04);
+
+  border-radius: 5px;
+`;
+
+export const BestMomentsHeader = styled.div`
+  display: flex;
+  width: 100%;
+
+  align-items: center;
+  align-self: flex-start;
+  justify-content: space-between;
+
+  margin: 20px;
+`;
+
+export const BestMomentsTitle = styled.p`
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  /* identical to box height */
+
+  color: #ffffff;
+`;
+
+export const BestMomentsSeeMore = styled.p`
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+
+  color: #5c677d;
+
+  cursor: pointer;
+`;
+
+export const LastMusics = styled.div`
+  display: flex;
+
+  width: 100%;
+  height: 275px;
+
+  background: rgba(255, 255, 255, 0.04);
+
+  border-radius: 5px;
+
+  margin-top: 30px;
+`;
+
+export const LastMusicsTitle = styled.p`
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+
+  margin: 20px;
+`;
+
+export const MainContentRight = styled.div`
+  display: flex;
+  width: 344px;
+
+  background: yellow;
 `;
