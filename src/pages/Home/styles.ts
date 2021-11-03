@@ -21,7 +21,7 @@ const active = css`
 
 export const Container = styled.div`
   display: flex;
-  width: 100vw;
+  max-width: 100vw;
   min-height: 100vh;
 
   background: linear-gradient(
@@ -192,12 +192,66 @@ export const MainContentLeft = styled.div`
 export const BestMoments = styled.div`
   display: flex;
 
-  width: 100%;
+  flex-direction: column;
+
   height: 229px;
 
   background: rgba(255, 255, 255, 0.04);
 
   border-radius: 5px;
+
+  .list {
+    display: flex;
+    width: 100%;
+
+    gap: 16px;
+
+    margin-left: 20px;
+
+    .music {
+      display: flex;
+      flex-direction: column;
+
+      width: 110px;
+
+      background: rgba(255, 255, 255, 0.04);
+
+      border: none;
+
+      border-radius: 5px;
+
+      padding: 10px;
+      .thumb {
+        width: 90px;
+        height: 86.62px;
+      }
+      .texts {
+        text-align: left;
+
+        margin-top: 10px;
+
+        .name {
+          font-family: DM Sans;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 16px;
+
+          color: #ffffff;
+        }
+
+        .artist {
+          font-family: DM Sans;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 10px;
+          line-height: 13px;
+
+          color: #5c677d;
+        }
+      }
+    }
+  }
 `;
 
 export const BestMomentsHeader = styled.div`
@@ -209,29 +263,30 @@ export const BestMomentsHeader = styled.div`
   justify-content: space-between;
 
   margin: 20px;
-`;
 
-export const BestMomentsTitle = styled.p`
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 21px;
-  /* identical to box height */
+  .title {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
 
-  color: #ffffff;
-`;
+    color: #ffffff;
+  }
 
-export const BestMomentsSeeMore = styled.p`
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 18px;
+  .see-all {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
 
-  color: #5c677d;
+    color: #5c677d;
 
-  cursor: pointer;
+    cursor: pointer;
+
+    transform: translateX(-50px);
+  }
 `;
 
 export const LastMusics = styled.div`
@@ -245,22 +300,87 @@ export const LastMusics = styled.div`
   border-radius: 5px;
 
   margin-top: 30px;
-`;
 
-export const LastMusicsTitle = styled.p`
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 21px;
-  color: #ffffff;
+  padding: 20px;
 
-  margin: 20px;
+  .title {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+
+    color: #ffffff;
+  }
 `;
 
 export const MainContentRight = styled.div`
   display: flex;
+
+  flex-direction: column;
+
   width: 344px;
 
-  background: yellow;
+  background: rgba(255, 255, 255, 0.04);
+
+  border-radius: 5px;
+
+  padding: 20px;
+
+  .title {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+
+    color: #ffffff;
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+
+    margin-top: 20px;
+
+    .music {
+      display: flex;
+
+      align-items: center;
+
+      background: transparent;
+
+      border: none;
+
+      cursor: pointer;
+
+      .texts {
+        margin-left: 16px;
+
+        text-align: left;
+
+        .name {
+          font-family: DM Sans;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 21px;
+
+          color: #ffffff;
+        }
+
+        .description {
+          font-family: DM Sans;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 16px;
+
+          color: #5c677d;
+        }
+      }
+    }
+  }
 `;

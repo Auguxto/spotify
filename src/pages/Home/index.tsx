@@ -3,6 +3,9 @@ import { Bell } from "lucide-react";
 
 import { Sidebar } from "../../components/Sidebar";
 
+import krawk from "../../assets/artists/Krawk.png";
+import Anaju_Mendes from "../../assets/artists/Anaju_Mendes.png";
+
 import * as S from "./styles";
 
 const Home: React.FC = () => {
@@ -35,15 +38,98 @@ const Home: React.FC = () => {
           <S.MainContentLeft>
             <S.BestMoments>
               <S.BestMomentsHeader>
-                <S.BestMomentsTitle>Melhores do momento</S.BestMomentsTitle>
-                <S.BestMomentsSeeMore>Ver todos</S.BestMomentsSeeMore>
+                <p className="title">Melhores do momento</p>
+                <p className="see-all">Ver todos</p>
               </S.BestMomentsHeader>
+              <div className="list">
+                <button className="music">
+                  <img src={Anaju_Mendes} className="thumb" />
+                  <div className="texts">
+                    <p className="name">House Party</p>
+                    <p className="artist">Anaju Mendes</p>
+                  </div>
+                </button>
+                <button className="music">
+                  <img src={Anaju_Mendes} className="thumb" />
+                  <div className="texts">
+                    <p className="name">House Party</p>
+                    <p className="artist">Anaju Mendes</p>
+                  </div>
+                </button>
+                <button className="music">
+                  <img src={Anaju_Mendes} className="thumb" />
+                  <div className="texts">
+                    <p className="name">House Party</p>
+                    <p className="artist">Anaju Mendes</p>
+                  </div>
+                </button>
+                <button className="music">
+                  <img src={Anaju_Mendes} className="thumb" />
+                  <div className="texts">
+                    <p className="name">House Party</p>
+                    <p className="artist">Anaju Mendes</p>
+                  </div>
+                </button>
+                <button className="music">
+                  <img src={Anaju_Mendes} className="thumb" />
+                  <div className="texts">
+                    <p className="name">House Party</p>
+                    <p className="artist">Anaju Mendes</p>
+                  </div>
+                </button>
+                <button className="music">
+                  <img src={Anaju_Mendes} className="thumb" />
+                  <div className="texts">
+                    <p className="name">House Party</p>
+                    <p className="artist">Anaju Mendes</p>
+                  </div>
+                </button>
+                <button className="music">
+                  <img src={Anaju_Mendes} className="thumb" />
+                  <div className="texts">
+                    <p className="name">House Party</p>
+                    <p className="artist">Anaju Mendes</p>
+                  </div>
+                </button>
+              </div>
             </S.BestMoments>
             <S.LastMusics>
-              <S.LastMusicsTitle>Últimas músicas tocadas</S.LastMusicsTitle>
+              <p className="title">Últimas músicas tocadas</p>
             </S.LastMusics>
           </S.MainContentLeft>
-          <S.MainContentRight>aaa</S.MainContentRight>
+          <S.MainContentRight>
+            <p className="title">Acesso rápido</p>
+            <div className="list">
+              <button className="music">
+                <img src={krawk} />
+                <div className="texts">
+                  <p className="name">Trap</p>
+                  <p className="description">40 músicas • 20 minutos</p>
+                </div>
+              </button>
+              <button className="music">
+                <img src={krawk} />
+                <div className="texts">
+                  <p className="name">Trap</p>
+                  <p className="description">40 músicas • 20 minutos</p>
+                </div>
+              </button>
+              <button className="music">
+                <img src={krawk} />
+                <div className="texts">
+                  <p className="name">Trap</p>
+                  <p className="description">40 músicas • 20 minutos</p>
+                </div>
+              </button>
+              <button className="music">
+                <img src={krawk} />
+                <div className="texts">
+                  <p className="name">Trap</p>
+                  <p className="description">40 músicas • 20 minutos</p>
+                </div>
+              </button>
+            </div>
+          </S.MainContentRight>
         </S.MainContent>
       </S.Content>
     </S.Container>
