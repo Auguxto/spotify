@@ -30,6 +30,8 @@ export const Container = styled.div`
 
   align-items: center;
 
+  grid-area: side-bar;
+
   width: 400px;
   height: 100vh;
 
